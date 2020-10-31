@@ -3,8 +3,11 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+    imports: [],
+    // express의 router 같은 역할
+    controllers: [AppController],
+    providers: [AppService],
 })
-export class AppModule {}
+
+
+export class aTestName {}

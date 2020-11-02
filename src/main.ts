@@ -2,6 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { aTestName } from './app.module';
 
+// 기본적으로 Express위에서 돌아감
 async function bootstrap() {
     // aTestName: root 모듈
     const app = await NestFactory.create(aTestName);

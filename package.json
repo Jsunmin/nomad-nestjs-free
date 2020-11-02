@@ -31,7 +31,10 @@
     "dependencies": {
         "@nestjs/common": "^7.0.0",
         "@nestjs/core": "^7.0.0",
+        "@nestjs/mapped-types": "^0.1.0",
         "@nestjs/platform-express": "^7.0.0",
+        "class-transformer": "^0.3.1",
+        "class-validator": "^0.12.2",
         "reflect-metadata": "^0.1.13",
         "rimraf": "^3.0.2",
         "rxjs": "^6.5.4"
@@ -60,14 +63,14 @@
     },
     "jest": {
         "moduleFileExtensions": [
-        "js",
-        "json",
-        "ts"
+            "js",
+            "json",
+            "ts"
         ],
         "rootDir": "src",
         "testRegex": ".spec.ts$",
         "transform": {
-        "^.+\\.(t|j)s$": "ts-jest"
+            "^.+\\.(t|j)s$": "ts-jest"
         },
         "coverageDirectory": "../coverage",
         "testEnvironment": "node"

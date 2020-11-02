@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
-import { MoviesController } from './movies/movies.controller';
-import { MoviesService } from './movies/movies.service';
 
-// nest cli : nest g service & controller로 생성한 movies셋
+import { MoviesModule } from './movies/movies.module';
+import { AppController } from './app.controller';
+
+// 각 도메인별로 모듈화 시킨다.
 @Module({
-    imports: [],
+    imports: [MoviesModule],
+    controllers: [AppController],
     // express의 router 같은 역할
-    controllers: [MoviesController],
-    providers: [MoviesService],
 })
 
 

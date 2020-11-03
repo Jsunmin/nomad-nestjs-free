@@ -3,6 +3,7 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
 
+// 마찬가지로 zest를 통해 테스트 (e2e ~ 전체 시스템, 스토리 테스트)
 describe('AppController (e2e)', () => {
   let app: INestApplication;
 
